@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Base\**" />
+    <Compile Remove="Services\Interfaces\**" />
+    <EmbeddedResource Remove="Services\Base\**" />
+    <EmbeddedResource Remove="Services\Interfaces\**" />
+    <None Remove="Services\Base\**" />
+    <None Remove="Services\Interfaces\**" />
+    <Page Remove="Services\Base\**" />
+    <Page Remove="Services\Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\CustomersRepository.cs" />
+    <Compile Remove="Services\OrdersManager.cs" />
+    <Compile Remove="Services\OrdersRepository.cs" />
+    <Compile Remove="Services\OrderViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="Views\Windows\" />
+  </ItemGroup>
+
+</Project>
