@@ -9,7 +9,7 @@
         xmlns:vm="clr-namespace:MasterDetailWPF31ViewCustomerCommand.ViewModels"        
         d:DataContext="{d:DesignInstance Type=vm:CustomerListViewModel, IsDesignTimeCreatable=True}"
         Title="{Binding Title}" 
-        Height="450" Width="380">
+        Height="600" Width="380">
 
     <!-- Window.Resources -->
     <Window.Resources>

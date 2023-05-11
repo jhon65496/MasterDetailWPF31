@@ -42,7 +42,8 @@ namespace MasterDetailWPF31ViewCustomerCommand.ViewModels
         private static CustomerListViewModel instance = null;
 
         //the selected customer (for showing orders for that customer)
-        private CustomerViewModel selectedCustomer = null;
+          private CustomerViewModel selectedCustomer = null;
+        
 
         // для открытия окна Добавления клиента
         // for opening up the Add Customer window
@@ -56,8 +57,8 @@ namespace MasterDetailWPF31ViewCustomerCommand.ViewModels
         {
             get
             {
-                Debug.WriteLine("=== Свойство CustomerList. Класс CustomerListViewModel ===");
-                return GetCustomers();
+                Debug.WriteLine("=== Свойство CustomerList. Класс CustomerListViewModel ===");                                
+                return customerList;
             }
             set
             {
@@ -65,9 +66,11 @@ namespace MasterDetailWPF31ViewCustomerCommand.ViewModels
                 OnPropertyChanged("CustomerList");
             }
         }
+        
+
 
         //the currently selected customer
-        public CustomerViewModel SelectedCustomer
+        public CustomerViewModel SelectedCustomer 
         {
             get
             {
@@ -110,21 +113,10 @@ namespace MasterDetailWPF31ViewCustomerCommand.ViewModels
         #region Конструктор
         public CustomerListViewModel()
         {
-
+            customerList = GetCustomers();
+            selectedCustomer = customerList[3];
         }
         #endregion
-
-        public void LoadData()
-        {
-            Debug.WriteLine(" === Метод LoadData(). Класс CustomerListViewModel ===");
-            
-            this.CustomerList = GetCustomers();
-        }
-
-
-
-
-        
 
         internal ObservableCollection<CustomerViewModel> GetCustomers()
         {

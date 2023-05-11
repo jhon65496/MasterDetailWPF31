@@ -219,9 +219,10 @@ namespace MasterDetailWPF31ViewCustomerCommand.ViewModels
             // svcCustomer.CustomerServiceClient c = new svcCustomer.CustomerServiceClient();
             // c.DeleteCustomer(this.CustomerId);
             
-                Customer customerDeleted = this.customer;
-                // TestData.Customers.
+            Customer customerDeleted = this.customer;
             
+            // TestData.Customers
+                
 
             // refresh the view
             this.Container.CustomerList = this.Container.GetCustomers();
