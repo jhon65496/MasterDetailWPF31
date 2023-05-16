@@ -8,7 +8,7 @@
              d:DataContext="{d:DesignInstance Type=viewmodels:CustomerListViewModel, IsDesignTimeCreatable=True}"
              mc:Ignorable="d" 
              
-             d:DesignHeight="350" d:DesignWidth="300">
+             d:DesignHeight="350" d:DesignWidth="350">
     <UserControl.Resources>
         <DataTemplate x:Key="RowButtons">
             <StackPanel Orientation="Horizontal">

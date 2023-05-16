@@ -7,7 +7,7 @@
              xmlns:viewmodels="clr-namespace:MasterDetailWPF31ViewCustomerCommand.ViewModels" 
              d:DataContext="{d:DesignInstance Type=viewmodels:OrderViewModel, IsDesignTimeCreatable=}"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="400">
     <UserControl.Resources>
         
     </UserControl.Resources>

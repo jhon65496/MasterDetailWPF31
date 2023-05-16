@@ -31,10 +31,13 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
+        
+        <!-- Master -->
         <GroupBox Header="CustomerListView" Grid.Column="1" Grid.Row="0" >
             <ContentControl Content="{Binding}" ContentTemplate="{StaticResource CustomerListTemplate}" />
         </GroupBox>
-
+        
+        <!-- Detail -->
         <GroupBox Header="OrderListView" Grid.Column="1" Grid.Row="1">
             <ContentControl Content="{Binding SelectedCustomer}" ContentTemplate="{StaticResource OrderListTemplate}"/>
         </GroupBox>
